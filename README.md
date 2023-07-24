@@ -6,7 +6,7 @@ Libraries:
 1. Graphs read in using **NetworkX**
 2. Graph types determined using various graph features (**distance measurements, centrality, etc.**) among number of potential choices (**Barabasi-Albert preferential attachment graphs, Watts-Strogatz small world network models, etc.**)
 3. Goal: identify the people in the network with missing values for the node attribute `ManagementSalary` and predict whether or not these individuals are receiving a managment position salary
-    -  Feature extraction performed using graph **node-wise** features (**betweenness centrality, degree centrality, closeness centraliity, eigenvector centrality, page rank, HITS algorithm hub and authority scores**)
+    -  Feature extraction performed using graph **node-wise** features (**clustering coefficient, betweenness, degree, eigenvector, and closeness centrality, page rank, HITS algorithm hub and authority scores**)
     - Training and test data prepared by segmenting feature values by presence of target variable
     - **Random Forest Classifier** fit (**Scikit-learn**) on available data to produce model
     - Model metrics determined through Coursera autograder and **ROC-curve AUC** of > **0.85** achieved
